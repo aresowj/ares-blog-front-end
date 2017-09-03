@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import LeftNavBar from './components/LeftNavBar.js'
+import RightBody from './components/RightBody.js'
 
 class App extends Component {
   render() {
     return (
-      <p className="App-intro">
-        To get started, edit <code>src/App.js</code> and save to reload.
-      </p>
+      <div id="layout" className="pure-g">
+        <LeftNavBar />
+        <RightBody />
+      </div>
     );
   }
 }
